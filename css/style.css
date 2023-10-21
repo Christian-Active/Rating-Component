@@ -1,0 +1,137 @@
+/* Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%) */
+:root{
+    --orange:rgb(251, 116, 19);
+    --white:rgb(255, 255, 255);
+    --light-grey:rgb(149, 158, 172);
+    --medium-grey:rgb(124, 135, 152);
+    --dark-blue:rgb(37, 45, 55);
+    --very-dark-blue:rgb(18, 20, 23);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--very-dark-blue);
+    font-family: sans-serif;
+    user-select: none;
+}
+.rate{
+    width: 85%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 130;
+    background-color: var(--dark-blue);
+    padding: 30 20;
+    border-radius: 20px;
+}
+
+.head img{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: var(--very-dark-blue);
+}
+.heading h2{
+    margin-top: 20px;
+    color: var(--white);
+}
+.paragraph p{
+    margin-top: 20px;
+    color: var(--light-grey);
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 20px;
+}
+.stars{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.star{
+    -webkit-tap-highlight-color: transparent;
+    padding: 13px 19;
+    border-radius: 50%;
+    background-color: var(--very-dark-blue);
+    margin-right: 10px;
+    color: var(--medium-grey);
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.star:hover{
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+.clicked{
+    padding: 13px 19;
+    border-radius: 50%;
+    background-color: var(--very-dark-blue);
+    margin-right: 10px;
+    color: var(--medium-grey);
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--orange);
+}
+.button button{
+    -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+    border-radius: 40px;
+    padding: 13 0;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.complete{
+    width: 85%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180;
+    background-color: var(--dark-blue);
+    padding: 30 20;
+    border-radius: 20px;
+}
+.ratings{
+    color: var(--orange);
+    padding: 10 15;
+    background-color: var(--very-dark-blue);
+    border-radius: 20px;
+    margin-top: 25px;
+}
+.thank-you{
+    color: var(--white);
+    margin-top: 20px;
+    font-size: 25px;
+}
+.appreciate{
+    text-align: center;
+    margin-top: 20px;
+    color: var(--light-grey);
+    font-size: 13px;
+    font-weight: bold;
+}
+@media screen and (min-width: 720px) {
+}
